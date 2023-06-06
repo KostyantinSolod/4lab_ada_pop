@@ -14,7 +14,7 @@ task body Philosopher is
       accept Start (Id : in Integer) do
          Philosopher.Id := Id;
          Id_Left_Fork := Id;
-         Id_Right_Fork := Id rem 5 + 1;
+         Id_Right_Fork := Id + 1;
          if(Id=5) then
             Id_Right_Fork:=5;
               Id_Left_Fork:=1;
